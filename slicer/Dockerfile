@@ -6,7 +6,7 @@ MAINTAINER pieper@isomics.com
 
 RUN apt-get update
 RUN apt-get install -y libglu1-mesa
-RUN apt-get install r-cran-rgl
+RUN apt-get install -y r-cran-rgl
 
 # Slicer 4.5: http://download.slicer.org/bitstream/461634
 # Slicer 4.6.2 http://download.slicer.org/bitstream/561384"

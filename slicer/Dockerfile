@@ -4,6 +4,7 @@
 FROM stevepieper/x11
 MAINTAINER pieper@isomics.com
 
+RUN apt-get update
 RUN apt-get install -y libglu1-mesa
 RUN apt-get install r-cran-rgl
 

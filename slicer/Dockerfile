@@ -8,6 +8,8 @@ RUN apt-get update
 RUN apt-get install -y libglu1-mesa
 RUN apt-get install -y r-cran-rgl
 RUN apt-get install -y firefox-esr
+RUN wget https://s3.amazonaws.com/rstudio-dailybuilds/rstudio-xenial-1.0.153-amd64.deb
+RUN apt-get install -y ./rstudio-xenial-1.0.153-amd64.deb
 
 # Slicer 4.5: http://download.slicer.org/bitstream/461634
 # Slicer 4.6.2 http://download.slicer.org/bitstream/561384"

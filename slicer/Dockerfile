@@ -16,8 +16,8 @@ RUN apt-get install -y ./rstudio-xenial-1.0.153-amd64.deb
 # Slicer 4.8.0 http://download.slicer.org/bitstream/561384"
 # Slicer 4.8.1 http://download.slicer.org/bitstream/738960"
 
-# Slicer 4.10.1
-RUN SLICER_URL="http://download.slicer.org/bitstream/944596" && \
+# Slicer Summer 2020 Workshop version
+RUN SLICER_URL="https://download.slicer.org/bitstream/1310652" && \
   curl -v -s -L $SLICER_URL | tar xz -C /tmp && \
   mv /tmp/Slicer* /opt/slicer
 

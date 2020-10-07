@@ -32,6 +32,11 @@ RUN su researcher -c "mkdir /home/researcher/Documents"
 COPY /home/researcher/Documents /home/researcher/Documents
 RUN chown -R researcher:researcher /home/researcher/Documents
 
+#copy extension installer script to the container and run the script inside the container. 
+#COPY extensions.py /home/researcher/
+#RUN /opt/slicer/Slicer --no-main-window --python-script /home/researcher/extensions.py
+
+
 #COPY /home/researcher/.config /home/researcher/.config
 #RUN chown -R researcher:researcher /home/researcher/.config
 
